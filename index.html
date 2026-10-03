@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Multimedia Blog featuring high quality audio songs and video songs with full playback controls.">
+  <title>Multimedia Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Pure CSS Filtering Control Inputs -->
+  <input type="radio" name="filter-tabs" id="tab-all" class="tab-radio" checked>
+  <input type="radio" name="filter-tabs" id="tab-audio" class="tab-radio">
+  <input type="radio" name="filter-tabs" id="tab-video" class="tab-radio">
+
+  <!-- Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#home" class="logo">
+        <div class="logo-icon">🎵</div>
+        <div>
+          <span class="logo-text">Multimedia Blog</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><label for="tab-audio" class="nav-link">Audio Songs (5)</label></li>
+          <li><label for="tab-video" class="nav-link">Video Songs (5)</label></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="hero-banner" id="home">
+    <div class="container">
+      <div class="hero-card">
+        <div class="hero-content">
+          <h1>Multimedia <span>Audio & Video</span> Blog</h1>
+          <p>Welcome to Multimedia Blog. Stream high-quality audio songs and watch video songs with full play and pause controls.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Container with CSS Filter Controls -->
+  <div class="container">
+    <div class="filter-navigation">
+      <div class="filter-tabs">
+        <label for="tab-all" class="filter-tab-label label-all">🌟 All Posts (10)</label>
+        <label for="tab-audio" class="filter-tab-label label-audio">🎧 Audio Songs (5)</label>
+        <label for="tab-video" class="filter-tab-label label-video">🎥 Video Songs (5)</label>
+      </div>
+    </div>
+
+    <!-- Single Column / Clean Grid Main Layout (No Sidebars) -->
+    <main class="blog-feed">
+      <h2 class="section-title">Latest Blog Posts</h2>
+
+      <!-- ==================== AUDIO POST 1 ==================== -->
+      <article class="blog-card audio-post" id="audio-1">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-audio">🎧 Audio Track 01</span>
+          <span class="post-date">Sep 2024</span>
+        </div>
+        <h3 class="post-title"><a href="#audio-1">Chuttamalle - Devara (Part 1)</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Devara: Part 1</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Anirudh Ravichander</strong></span>
+          <span class="credit-item">🎤 Singer: <strong>Shilpa Rao</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="audio-wrapper">
+            <div class="audio-header-strip">
+              <div class="track-info-mini">
+                <div class="album-art">🌊</div>
+                <div>
+                  <strong style="font-size: 0.95rem;">Chuttamalle (Full Audio)</strong>
+                  <div style="font-size: 0.75rem; color: var(--accent-gold);">Original Audio Song</div>
+                </div>
+              </div>
+            </div>
+            <audio controls preload="metadata" class="audio-player-element">
+              <source src="assets/audio/01_chuttamalle_devara.mp3" type="audio/mpeg">
+              <source src="assets/audio/01_chuttamalle_devara.webm" type="audio/webm">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Anirudh Ravichander delivers a mesmeric coastal romantic melody with "Chuttamalle" from Koratala Siva's epic action saga <em>Devara</em>. Featuring Jr. NTR and Janhvi Kapoor, Shilpa Rao's velvety vocals combined with traditional string orchestrations create an instantly addictive groove.
+        </p>
+
+        <div class="post-tags">
+          <a href="#devara" class="tag">#Devara</a>
+          <a href="#anirudh" class="tag">#AnirudhRavichander</a>
+          <a href="#shilparao" class="tag">#ShilpaRao</a>
+        </div>
+      </article>
+
+      <!-- ==================== VIDEO POST 1 ==================== -->
+      <article class="blog-card video-post" id="video-1">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-video">🎥 Video Song 01</span>
+          <span class="post-date">May 2024</span>
+        </div>
+        <h3 class="post-title"><a href="#video-1">Fear Song (Video) - Devara</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Devara: Part 1</strong></span>
+          <span class="credit-item">🔥 Star: <strong>N.T. Rama Rao Jr.</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Anirudh Ravichander</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="video-wrapper">
+            <video controls playsinline preload="metadata" class="video-player-element">
+              <source src="assets/video/01_fear_song_devara.mp4" type="video/mp4">
+              <source src="assets/video/01_fear_song_devara.f397.mp4" type="video/mp4">
+              <source src="assets/video/01_fear_song_devara.f251.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Watch the thunderous Video song "Fear Song" from <em>Devara</em>! Jr. NTR unleashes intense energy amidst high sea waves and dramatic lighting. Anirudh's booming percussion and raw vocals set the screen on fire.
+        </p>
+
+        <div class="post-tags">
+          <a href="#fear-song" class="tag">#FearSong</a>
+          <a href="#devara" class="tag">#DevaraVideo</a>
+        </div>
+      </article>
+
+      <!-- ==================== AUDIO POST 2 ==================== -->
+      <article class="blog-card audio-post" id="audio-2">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-audio">🎧 Audio Track 02</span>
+          <span class="post-date">Aug 2024</span>
+        </div>
+        <h3 class="post-title"><a href="#audio-2">Peelings - Pushpa 2: The Rule</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Pushpa 2: The Rule</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Devi Sri Prasad (DSP)</strong></span>
+          <span class="credit-item">🎤 Singers: <strong>Laxmi Duggirala, DSP</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="audio-wrapper">
+            <div class="audio-header-strip">
+              <div class="track-info-mini">
+                <div class="album-art">🪓</div>
+                <div>
+                  <strong style="font-size: 0.95rem;">Peelings (Full Audio)</strong>
+                  <div style="font-size: 0.75rem; color: var(--accent-gold);">Original Audio Song</div>
+                </div>
+              </div>
+            </div>
+            <audio controls preload="metadata" class="audio-player-element">
+              <source src="assets/audio/02_peelings_pushpa2.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Rockstar DSP delivers an electrifying beat in "Peelings" for Sukumar's highly anticipated magnum opus <em>Pushpa 2: The Rule</em>. Packed with rustic folk percussions, catchy lyrics, and infectious energy.
+        </p>
+
+        <div class="post-tags">
+          <a href="#pushpa2" class="tag">#Pushpa2TheRule</a>
+          <a href="#alluarjun" class="tag">#AlluArjun</a>
+          <a href="#dsp" class="tag">#DeviSriPrasad</a>
+        </div>
+      </article>
+
+      <!-- ==================== VIDEO POST 2 ==================== -->
+      <article class="blog-card video-post" id="video-2">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-video">🎥 Video Song 02</span>
+          <span class="post-date">Nov 2021</span>
+        </div>
+        <h3 class="post-title"><a href="#video-2">Srivalli (Video Song) - Pushpa: The Rise</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Pushpa: The Rise</strong></span>
+          <span class="credit-item">💃 Cast: <strong>Allu Arjun, Rashmika Mandanna</strong></span>
+          <span class="credit-item">🎤 Singer: <strong>Sid Sriram</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="video-wrapper">
+            <video controls playsinline preload="metadata" class="video-player-element">
+              <source src="assets/video/02_srivalli_pushpa.mp4" type="video/mp4">
+              <source src="assets/video/02_srivalli_pushpa.f397.mp4" type="video/mp4">
+              <source src="assets/video/02_srivalli_pushpa.f251.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Experience the world-famous iconic dance move by Allu Arjun in the "Srivalli" video song! Sid Sriram's soulful rendition and DSP's magical acoustic strings make this video song a classic.
+        </p>
+
+        <div class="post-tags">
+          <a href="#srivalli" class="tag">#Srivalli</a>
+          <a href="#pushpa" class="tag">#PushpaTheRise</a>
+          <a href="#sidsriram" class="tag">#SidSriram</a>
+        </div>
+      </article>
+
+      <!-- ==================== AUDIO POST 3 ==================== -->
+      <article class="blog-card audio-post" id="audio-3">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-audio">🎧 Audio Track 03</span>
+          <span class="post-date">Mar 2022</span>
+        </div>
+        <h3 class="post-title"><a href="#audio-3">Naatu Naatu - RRR</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>RRR</strong></span>
+          <span class="credit-item">🎼 Music: <strong>M.M. Keeravaani</strong></span>
+          <span class="credit-item">🎤 Singers: <strong>Rahul Sipligunj, Kaala Bhairava</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="audio-wrapper">
+            <div class="audio-header-strip">
+              <div class="track-info-mini">
+                <div class="album-art">🏆</div>
+                <div>
+                  <strong style="font-size: 0.95rem;">Naatu Naatu (Full Audio Track)</strong>
+                  <div style="font-size: 0.75rem; color: var(--accent-gold);">Original Audio Song</div>
+                </div>
+              </div>
+            </div>
+            <audio controls preload="metadata" class="audio-player-element">
+              <source src="assets/audio/03_naatu_naatu_rrr.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          The historic Oscar-winning song! M.M. Keeravaani's high-tempo folk rhythms accompanied by energetic vocals from Rahul Sipligunj and Kaala Bhairava create pure musical magic.
+        </p>
+
+        <div class="post-tags">
+          <a href="#naatunaatu" class="tag">#NaatuNaatu</a>
+          <a href="#rrr" class="tag">#RRRMovie</a>
+          <a href="#keeravaani" class="tag">#MMKeeravaani</a>
+        </div>
+      </article>
+
+      <!-- ==================== VIDEO POST 3 ==================== -->
+      <article class="blog-card video-post" id="video-3">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-video">🎥 Video Song 03</span>
+          <span class="post-date">Aug 2021</span>
+        </div>
+        <h3 class="post-title"><a href="#video-3">Dosti (Video Song) - RRR</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>RRR</strong></span>
+          <span class="credit-item">👥 Stars: <strong>Ram Charan, Jr. NTR</strong></span>
+          <span class="credit-item">🎼 Music: <strong>M.M. Keeravaani</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="video-wrapper">
+            <video controls playsinline preload="metadata" class="video-player-element">
+              <source src="assets/video/03_dosti_rrr.mp4" type="video/mp4">
+              <source src="assets/video/03_dosti_rrr.f397.mp4" type="video/mp4">
+              <source src="assets/video/03_dosti_rrr.f251.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Celebration of brotherhood and fire-water alliance! S.S. Rajamouli's <em>RRR</em> features this grand visual spectacle showcasing Ram Charan and Jr. NTR coming together under M.M. Keeravaani's soul-stirring composition.
+        </p>
+
+        <div class="post-tags">
+          <a href="#dosti" class="tag">#DostiRRR</a>
+          <a href="#ramcharan" class="tag">#RamCharan</a>
+          <a href="#jrntr" class="tag">#JrNTR</a>
+        </div>
+      </article>
+
+      <!-- ==================== AUDIO POST 4 ==================== -->
+      <article class="blog-card audio-post" id="audio-4">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-audio">🎧 Audio Track 04</span>
+          <span class="post-date">Jun 2024</span>
+        </div>
+        <h3 class="post-title"><a href="#audio-4">Kalki Theme - Kalki 2898 AD</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Kalki 2898 AD</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Santhosh Narayanan</strong></span>
+          <span class="credit-item">🌟 Star: <strong>Rebel Star Prabhas</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="audio-wrapper">
+            <div class="audio-header-strip">
+              <div class="track-info-mini">
+                <div class="album-art">🏹</div>
+                <div>
+                  <strong style="font-size: 0.95rem;">Kalki Theme (Full Audio)</strong>
+                  <div style="font-size: 0.75rem; color: var(--accent-gold);">Original Audio Song</div>
+                </div>
+              </div>
+            </div>
+            <audio controls preload="metadata" class="audio-player-element">
+              <source src="assets/audio/04_kalki_theme_kalki2898ad.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Santhosh Narayanan blends ancient chants with futuristic cyber-synth beats in the theme music for Nag Ashwin's sci-fi blockbuster <em>Kalki 2898 AD</em> featuring Prabhas, Amitabh Bachchan, and Kamal Haasan.
+        </p>
+
+        <div class="post-tags">
+          <a href="#kalki2898ad" class="tag">#Kalki2898AD</a>
+          <a href="#prabhas" class="tag">#Prabhas</a>
+          <a href="#santhosh" class="tag">#SanthoshNarayanan</a>
+        </div>
+      </article>
+
+      <!-- ==================== VIDEO POST 4 ==================== -->
+      <article class="blog-card video-post" id="video-4">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-video">🎥 Video Song 04</span>
+          <span class="post-date">Jun 2024</span>
+        </div>
+        <h3 class="post-title"><a href="#video-4">Bhairava Anthem (Video Song) - Kalki 2898 AD</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Kalki 2898 AD</strong></span>
+          <span class="credit-item">🎤 Performer: <strong>Diljit Dosanjh & Prabhas</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Santhosh Narayanan</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="video-wrapper">
+            <video controls playsinline preload="metadata" class="video-player-element">
+              <source src="assets/video/04_bhairava_anthem_kalki2898ad.mp4" type="video/mp4">
+              <source src="assets/video/04_bhairava_anthem_kalki2898ad.f397.mp4" type="video/mp4">
+              <source src="assets/video/04_bhairava_anthem_kalki2898ad.f251.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Punjabi superstar Diljit Dosanjh joins Rebel Star Prabhas in the stylish Bhairava Anthem video song. Featuring futuristic cars and high-octane visual effects.
+        </p>
+
+        <div class="post-tags">
+          <a href="#bhairava-anthem" class="tag">#BhairavaAnthem</a>
+          <a href="#prabhas" class="tag">#Prabhas</a>
+        </div>
+      </article>
+
+      <!-- ==================== AUDIO POST 5 ==================== -->
+      <article class="blog-card audio-post" id="audio-5">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-audio">🎧 Audio Track 05</span>
+          <span class="post-date">Dec 2023</span>
+        </div>
+        <h3 class="post-title"><a href="#audio-5">Kurchi Madathapetti - Guntur Kaaram</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Guntur Kaaram</strong></span>
+          <span class="credit-item">🌟 Star: <strong>Superstar Mahesh Babu</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Thaman S</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="audio-wrapper">
+            <div class="audio-header-strip">
+              <div class="track-info-mini">
+                <div class="album-art">🌶️</div>
+                <div>
+                  <strong style="font-size: 0.95rem;">Kurchi Madathapetti (Full Audio)</strong>
+                  <div style="font-size: 0.75rem; color: var(--accent-gold);">Original Audio Song</div>
+                </div>
+              </div>
+            </div>
+            <audio controls preload="metadata" class="audio-player-element">
+              <source src="assets/audio/05_kurchi_madathapetti_gunturkaaram.mp3" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Thaman S concocts an explosive folk anthem in "Kurchi Madathapetti" featuring Mahesh Babu and Sreeleela. High-voltage horn sections and basslines make this a top dance track.
+        </p>
+
+        <div class="post-tags">
+          <a href="#gunturkaaram" class="tag">#GunturKaaram</a>
+          <a href="#maheshbabu" class="tag">#MaheshBabu</a>
+          <a href="#thaman" class="tag">#ThamanS</a>
+        </div>
+      </article>
+
+      <!-- ==================== VIDEO POST 5 ==================== -->
+      <article class="blog-card video-post" id="video-5">
+        <div class="card-header-meta">
+          <span class="media-type-badge badge-video">🎥 Video Song 05</span>
+          <span class="post-date">Jan 2020</span>
+        </div>
+        <h3 class="post-title"><a href="#video-5">Samajavaragamana - Ala Vaikunthapurramuloo</a></h3>
+        <div class="artist-credits">
+          <span class="credit-item">🎬 Movie: <strong>Ala Vaikunthapurramuloo</strong></span>
+          <span class="credit-item">🎤 Singer: <strong>Sid Sriram</strong></span>
+          <span class="credit-item">🎼 Music: <strong>Thaman S</strong></span>
+        </div>
+
+        <div class="media-container">
+          <div class="video-wrapper">
+            <video controls playsinline preload="metadata" class="video-player-element">
+              <source src="assets/video/05_samajavaragamana_alavaikunthapurramuloo.mp4" type="video/mp4">
+              <source src="assets/video/05_samajavaragamana_alavaikunthapurramuloo.f397.mp4" type="video/mp4">
+              <source src="assets/video/05_samajavaragamana_alavaikunthapurramuloo.f251.webm" type="video/webm">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <p class="post-excerpt">
+          Shot against the breathtaking backdrop of Paris landmarks, "Samajavaragamana" features Allu Arjun and Pooja Hegde in Trivikram Srinivas's musical romantic blockbuster. Sid Sriram's velvety vocals are matched with stunning cinematography.
+        </p>
+
+        <div class="post-tags">
+          <a href="#samajavaragamana" class="tag">#Samajavaragamana</a>
+          <a href="#alavaikunthapurramuloo" class="tag">#AlaVaikunthapurramuloo</a>
+          <a href="#alluarjun" class="tag">#AlluArjun</a>
+        </div>
+      </article>
+
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="logo">
+            <div class="logo-icon">🎵</div>
+            <span class="logo-text">Multimedia Blog</span>
+          </div>
+          <p>Your portal for audio and video entertainment. Enjoy 5 audio songs and 5 video songs with full playback controls.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Audio Songs</h4>
+          <ul class="footer-links">
+            <li><a href="#audio-1">Chuttamalle (Devara)</a></li>
+            <li><a href="#audio-2">Peelings (Pushpa 2)</a></li>
+            <li><a href="#audio-3">Naatu Naatu (RRR)</a></li>
+            <li><a href="#audio-4">Kalki Theme (Kalki 2898 AD)</a></li>
+            <li><a href="#audio-5">Kurchi Madathapetti</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Video Songs</h4>
+          <ul class="footer-links">
+            <li><a href="#video-1">Fear Song (Devara)</a></li>
+            <li><a href="#video-2">Srivalli (Pushpa)</a></li>
+            <li><a href="#video-3">Dosti (RRR)</a></li>
+            <li><a href="#video-4">Bhairava Anthem (Kalki)</a></li>
+            <li><a href="#video-5">Samajavaragamana (AVPL)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
